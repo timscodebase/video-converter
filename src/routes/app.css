@@ -1,0 +1,33 @@
+@import '@fontsource-variable/manrope';
+
+:root {
+  --white: #eee;
+  --black: #222;
+  --dark-grey: hsl(220, 10%, 20%);
+  --dark-gray: var(--dark-grey);
+  --orange: hsl(9 100% 64%);
+  --orange-dark: hsl(9 60% 30%);
+  --aqua: hsl(180 100% 50%);
+
+  --surface: var(--black);
+  --surface-active: var(--orange-dark);
+  --text: var(--white);
+  --border: var(--dark-grey);
+  --error: var(--orange);
+  --primary: var(--aqua);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-family: 'Manrope Variable', sans-serif;
+  color: var(--text);
+  background-color: var(--surface);
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
+}
